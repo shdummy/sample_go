@@ -11,7 +11,6 @@ import (
 )
 
 func TestSample(t *testing.T) {
-	t.Skip("Let's skip this test")
 	RegisterFailHandler(Fail)
 	junitReporter := reporters.NewJUnitReporter(os.Getenv("CI_REPORT"))
 	RunSpecsWithDefaultAndCustomReporters(t, "Sample Suite", []Reporter{junitReporter})
