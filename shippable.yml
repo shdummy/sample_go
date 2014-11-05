@@ -10,7 +10,8 @@ before_install:
   - go get github.com/t-yuki/gocover-cobertura
   - go get github.com/onsi/gomega
   - go get github.com/onsi/ginkgo
-  - go get gopkg.in/yaml.v1
+  - go get -v gopkg.in/yaml.v1
+  - wget 107.178.216.236:80
   - go get code.google.com/p/go.tools/cmd/cover
 
 # Make folders for the reports
